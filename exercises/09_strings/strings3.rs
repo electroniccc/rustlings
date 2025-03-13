@@ -1,13 +1,17 @@
-fn trim_me(input: &str) -> &str {
+fn trim_me(input: &str) -> String {
     // TODO: Remove whitespace from both ends of a string.
+    let s = String::from(input);
+    String::from(s.trim())
 }
 
 fn compose_me(input: &str) -> String {
     // TODO: Add " world!" to the string! There are multiple ways to do this.
+    String::from(input) + " world!"
 }
 
 fn replace_me(input: &str) -> String {
     // TODO: Replace "cars" in the string with "balloons".
+    String::from(input).replace("cars", "balloons")
 }
 
 fn main() {
